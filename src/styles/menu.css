@@ -1,0 +1,64 @@
+.navigation{  
+    position: absolute;
+    z-index: 9;
+    text-align: center;   
+    width: 30px;
+    height: 30px;
+    background: #FFFAFA;
+    transition: width 0.3s, height 0.3s;
+    transition-delay: 0s, 0.50s;
+    overflow: hidden;
+    left:91%;
+}
+.navigation.active{
+    width: 30px;
+    height: 240px;
+    transition: height 0.3s, width 0.3s ;
+    transition-delay: 0s, 0.50s;
+}
+.navigation .toggle{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #030303;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 0.3rem;
+}
+.navigation .toggle.active{
+    background: #000000;
+}
+.navigation .toggle::before{
+    content: '+';    
+    position: absolute;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:39px;
+    height: 40%;
+    color: rgb(250, 250, 250);
+    font-weight: 800;
+    transition: 0.3s;
+}
+.navigation .toggle.active::before{
+    transform: rotate(315deg);
+}
+
+.navigation .icon{
+    position: relative;
+    display: block;   
+    min-width:  30px;
+    font-size:  24px;
+    color: #000000;
+    line-height: 50px;
+    text-decoration:none;
+}
+
+
+
