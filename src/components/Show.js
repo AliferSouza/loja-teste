@@ -21,7 +21,7 @@ const Show = {
                 <h2>${cCard.Titulo}</h2>
                 <br>
                 <br>            
-                <a class="btn-car" href="${cCard.Link}">Adquerir</a>
+                <a class="btn-car" href="${cCard.Link}">Adquirir</a>
             </div>
         </div>
     `
