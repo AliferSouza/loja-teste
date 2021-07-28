@@ -7,7 +7,7 @@ const Show = {
             <h2>${post.Titulo}</h2>
             <br>
             <br>
-            <a class="btn" href="${post.Link}">Adquerir</a>
+            <a class="btn" href="${post.Link}">Adquirir</a>
         </div>`
         }
         document.querySelector('.conteiner-cards').innerHTML = output
