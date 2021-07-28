@@ -25,18 +25,18 @@
 }
 /*/* carrossel /*/
 @keyframes slide {
-  0%{left:0px}
-  20%{left:0px}
-  40%{left: -190px}
-  50%{left:-190px}
-  70%{left: -390px}
-  90%{left: -390px;}
+  0%{left:  0px}
+  20%{left: 0px}
+  40%{left: -220px}
+  50%{left: -220px}
+  70%{left: -460px}
+  90%{left: -460px;}
   100%{left: -0px}  
 }
 .box-info{
   padding-top: 1rem;
 }
-.rect-card .btn {  
+.rect-card .btn-car {  
     padding: 0.4rem;
     color: white;
     background-color: #000;
@@ -46,7 +46,7 @@
     font-size: 0.6rem;
     text-decoration: none;
 }  
-.rect-card.btn:hover {
-    opacity: 0.7;
+.rect-card.btn-car:hover {
+    opacity: 0.8;
 }
  

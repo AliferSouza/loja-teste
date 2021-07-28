@@ -1,33 +1,18 @@
-#mydiv {
+.navigation{  
     position: absolute;
     z-index: 9;
-    background-color: #f1f1f1;
-    text-align: center;
-    border: 1px solid #d3d3d3;
-}
-
-#mydivheader {
-    padding: 10px;
-    cursor: move;
-    z-index: 10;
-    background-color: #2196F3;
-    color: #fff;
-}
-
-.navigation{      
-    position: relative;
-    width: 50px;
-    height: 50px;
-    background: #fff;
+    text-align: center;   
+    width: 30px;
+    height: 30px;
+    background: #FFFAFA;
     transition: width 0.3s, height 0.3s;
     transition-delay: 0s, 0.50s;
-    z-index: 100000;
-    border-radius: 4px;
     overflow: hidden;
+    left:91%;
 }
 .navigation.active{
-    width: 50px;
-    height: 220px;
+    width: 30px;
+    height: 240px;
     transition: height 0.3s, width 0.3s ;
     transition-delay: 0s, 0.50s;
 }
@@ -40,10 +25,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background: #000000;
+    background: #030303;
     transition: 0.5s;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.3rem;
 }
 .navigation .toggle.active{
     background: #000000;
@@ -55,7 +40,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width:65px;
+    width:39px;
     height: 40%;
     color: rgb(250, 250, 250);
     font-weight: 800;
@@ -65,19 +50,15 @@
     transform: rotate(315deg);
 }
 
-a{    
-    display: flex;
-}
-
-.navigation a .icon{
+.navigation .icon{
     position: relative;
-    display: block;
-   
-    min-width:  50px;
+    display: block;   
+    min-width:  30px;
     font-size:  24px;
     color: #000000;
     line-height: 50px;
     text-decoration:none;
 }
+
 
 

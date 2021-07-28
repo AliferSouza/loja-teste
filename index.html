@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
-
 <body>
     <header class="header">
-    </header>
-    <div class="navigation" id="mydiv">
+    </header> 
+    <div class="rectangle-cards"></div>
+    <div class="conteiner-cards"></div>
+    <footer class="footer">Loja do Alifer</footer>  
+    <div class="navigation">
         <div class="toggle"></div>
         <ul>
             <li>
@@ -52,64 +52,10 @@
             </li>
         </ul>
     </div>
-
-    <div class="rectangle-cards"></div>
-
-    <div class="conteiner-cards"></div>
-
-    <footer class="footer">Loja do Alifer</footer>
-
-
     <script type="module">
         import { App } from './src/App.js'
         App.start()
     </script>
-
-    <script src="./src/js/Menu.js"></script>
-
-    
-
-    
-
-
-    </script>
-
-    <script>
-        window.onload = function () {
-            //select the thing we wanna drag
-            var mustachio = document.getElementById('mydiv');
-            //listen to the touchmove event, every time it fires, grab the location of the touch
-            //then assign it to mustachio
-            mustachio.addEventListener('touchmove', function (ev) {
-                //grab the location of the touch
-                var touchLocation = ev.targetTouches[0];
-                //assign mustachio new coordinates based on the touch
-                mustachio.style.left = touchLocation.pageX + 'px';
-                mustachio.style.top = touchLocation.pageY + 'px';
-            })
-            mustachio.addEventListener('touchend', function (ev) {
-                //current mustachio position when dropped
-                var x = parseInt(mustachio.style.left);
-                var y = parseInt(mustachio.style.top);
-                //check to see if that position meets our constraints
-                if (x < 388 || x > 646) {
-                    mustachio.style.left = '450px';
-                    mustachio.style.top = '175px';
-                }
-                if (y < 100 || y > 356) {
-                    mustachio.style.left = '450px';
-                    mustachio.style.top = '175px';
-                }
-            })
-        }
-
-
-    </script>
-
-
-
-
-
+    <script src="./src/js/Menu.js"></script>   
 </body>
-
 </html>

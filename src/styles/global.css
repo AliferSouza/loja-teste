@@ -3,12 +3,8 @@
     margin: 0;
     padding: 0;
 }
-
-
-
 body {
-    background: #FFFAFA;
-   
+  background: #FFFAFA;  
 }
 
 .header {
@@ -23,24 +19,22 @@ body {
     font-size: 0.8rem; 
 }
 
-
   .footer {        
-      padding-top: 2rem;
+      padding-top: 4rem;
       text-align: center; 
       font-style: italic;        
   }
-
-
-  @media (max-width: 300px) { 
+ 
+  @media (max-width: 600px) { 
 
     .header {              
         font-size: 0.6rem; 
     }
-    .header image{
-        width: 40rem;
-        height: 40rem;
-    }
-   
+    .navigation{  
+        top:0.5%;
+       
+    }  
      
+   
 }
 
